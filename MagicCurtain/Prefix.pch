@@ -1,0 +1,43 @@
+//
+//  Prefix.pch
+//  MagicCurtain
+//
+//  Created by macbook pro on 15/10/27.
+//  Copyright © 2015年 com.honglangya. All rights reserved.
+//
+
+
+#ifndef Prefix_pch
+#define Prefix_pch
+enum LanguageOption {
+    OFF = 0,
+    ENGLISH = 1,
+    SPANISH = 2
+};
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import "HttpConstant.h"
+#import "SharedAction.h"
+#import "SharedData.h"
+#import <SVProgressHUD.h>
+
+//#define IP @"http://192.168.31.113"
+#define IP @"http://www.bywindow.com"
+#define BasePictureUrl [NSString stringWithFormat:@""
+#define RegistWordIP @"http://www.bywindow.com/Static/bbedu.txt"
+#define BaseUrl [NSString stringWithFormat:@"%@/inf.php/",IP]
+
+
+#define UmengAppkey @"5652861067e58e75b400007d"
+#define WeiXinAppID @"wx90b4f15ffe6cc51e"
+#define WeiXinAppSecret @"d4624c36b6795d1d99dcf0547af5443d"
+#define QQAppID @"1104985994"
+#define QQAppSecret @"FLuzZ76RJvU5ZfFS"
+
+#define DEFAULT_VOID_COLOR [UIColor whiteColor]
+#define DeviceFrame [UIScreen mainScreen].bounds
+#define StatusBarFrame [[UIApplication sharedApplication] statusBarFrame]
+//#define NavigationBarFrame [[UIApplication sharedApplication].navigationBar].NavigationBarFrame
+//#define TabBarFrame [[UIApplication sharedApplication].navigationBar].TabBarFrame
+#endif /* Prefix_pch */
